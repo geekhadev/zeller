@@ -1,7 +1,17 @@
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import Information from '@/components/Information'
+import Features from '@/components/Features'
+import Footer from '@/components/Footer'
+
 export default function Home () {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Zeller</h1>
-    </main>
+    <div id="inicio">
+      <Header />
+      <Hero />
+      <Information />
+      <Features />
+      <Footer />
+    </div>
   )
 }
