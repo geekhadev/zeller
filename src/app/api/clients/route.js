@@ -1,8 +1,18 @@
 import { NextResponse } from 'next/server'
 
+const clients = [
+  {
+    id: 1,
+    name: 'Juan Perez',
+    rut: '11.111.111-1'
+  },
+  {
+    id: 2,
+    name: 'Pedro Soto',
+    rut: '21.111.111-1'
+  }
+]
+
 export async function GET () {
-  return NextResponse.json([
-    { id: 1, rut: '11111111-1', name: 'Generic Client' },
-    { id: 2, rut: '11111111-1', name: 'Exportation Client' }
-  ])
+  return NextResponse.json(clients)
 }
