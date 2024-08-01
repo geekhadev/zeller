@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { GET } from './route'
 
 describe('GET /clients', () => {
-  it('debe retornar una lista de clientes', async () => {
+  it('should return a list of clients', async () => {
     const response = await GET()
     expect(response.status).toBe(200)
 

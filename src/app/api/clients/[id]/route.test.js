@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { GET } from './route'
 
 describe('GET /clients/:id', () => {
-  it('should return a client', async () => {
+  it('debe retornar un cliente', async () => {
     const response = await GET({}, { params: { id: 1 } })
     expect(response.status).toBe(200)
 
@@ -16,7 +16,7 @@ describe('GET /clients/:id', () => {
     expect(Array.isArray(client.debts)).toBe(true)
   })
 
-  it('should return a 404 error when the client does not exist', async () => {
+  it('debe retornar un error si el cliente no existe', async () => {
     const response = await GET({}, { params: { id: 9999999 } })
     expect(response.status).toBe(404)
   })
