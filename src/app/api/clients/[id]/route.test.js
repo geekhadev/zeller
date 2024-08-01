@@ -10,6 +10,10 @@ describe('GET /clients/:id', () => {
     expect(client).toHaveProperty('id')
     expect(client).toHaveProperty('name')
     expect(client).toHaveProperty('rut')
+    expect(client).toHaveProperty('messages')
+    expect(client).toHaveProperty('debts')
+    expect(Array.isArray(client.messages)).toBe(true)
+    expect(Array.isArray(client.debts)).toBe(true)
   })
 
   it('should return a 404 error when the client does not exist', async () => {
