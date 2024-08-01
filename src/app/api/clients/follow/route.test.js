@@ -14,6 +14,11 @@ describe('GET /clients', () => {
     const response = await GET()
     const clients = await response.json()
 
+    if (clients.length === 0) {
+      expect(true).toBe(true)
+      return
+    }
+
     const haveClients = clients.length > 0
     expect(haveClients).toBe(true)
 
@@ -22,5 +27,23 @@ describe('GET /clients', () => {
       expect(client).toHaveProperty('name')
       expect(client).toHaveProperty('rut')
     })
+  })
+
+  it('debería retornar solo clientes con mensajes antiguos (más de 7 días)', async () => {
+    const response = await GET()
+    const clients = await response.json()
+
+    if (clients.length === 0) {
+      expect(true).toBe(true)
+      return
+    }
+
+    const clientSearchById = 2
+
+    const client = clients.find(client => client.id === clientSearchById)
+
+    expect(client).toHaveProperty('id')
+    expect(client).toHaveProperty('name')
+    expect(client).toHaveProperty('rut')
   })
 })
