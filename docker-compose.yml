@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    postgres:
+        image: postgres:16
+        container_name: zeller-db
+        environment:
+            POSTGRES_DB: zeller
+            POSTGRES_USER: admin
+            POSTGRES_PASSWORD: admin
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./postgresql:/var/lib/postgresql/data

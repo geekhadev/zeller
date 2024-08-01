@@ -38,7 +38,7 @@ describe('GET /clients', () => {
       return
     }
 
-    const clientSearchById = 2
+    const clientSearchById = 1
 
     const client = clients.find(client => client.id === clientSearchById)
 

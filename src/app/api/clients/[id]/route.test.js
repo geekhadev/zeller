@@ -11,13 +11,18 @@ describe('GET /clients/:id', () => {
     expect(client).toHaveProperty('name')
     expect(client).toHaveProperty('rut')
     expect(client).toHaveProperty('messages')
-    expect(client).toHaveProperty('debts')
     expect(Array.isArray(client.messages)).toBe(true)
+    expect(client).toHaveProperty('debts')
     expect(Array.isArray(client.debts)).toBe(true)
   })
 
   it('debe retornar un error si el cliente no existe', async () => {
     const response = await GET({}, { params: { id: 9999999 } })
     expect(response.status).toBe(404)
+  })
+
+  it('debe retornar un error si no se envía un id correcto (número)', async () => {
+    const response = await GET({}, { params: { id: 'abc' } })
+    expect(response.status).toBe(400)
   })
 })
