@@ -25,13 +25,15 @@ Para comenzar a utilizar este template en tu proyecto, sigue los siguientes paso
     docker-compose up
     ```
 
-4. Inicia el servidor de desarrollo:
+4. Correr los script sql para crear las tablas y los datos de prueba: están en la carpeta `database`
+
+5. Inicia el servidor de desarrollo:
 
     ```bash
     npm run dev
     ```
 
-5. Rutas para probar el API:
+6. Rutas para probar el API:
 
     - `GET http://localhost:3000/api/health`: verifica que el servidor esté en línea.
     - `GET http://localhost:3000/api/clients`: obtiene todos los clientes.
@@ -54,7 +56,7 @@ Para comenzar a utilizar este template en tu proyecto, sigue los siguientes paso
     }
     ```
 
-6. Rutas para probar la UI
+7. Rutas para probar la UI
 
     - `GET http://localhost:3000/`: refactorice un poco la página del producto principal
     - `GET http://localhost:3000/tienda/geekcar`: ejemplo de una página con integración de ia al entrar a la página del detalle de un auto hay un chatbot también la descripcieon del auto se genera con ia
