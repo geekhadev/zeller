@@ -6,6 +6,11 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    fontFamily: {
+      marker: ['Permanent Marker', 'cursive'],
+      anton: ['Anton', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif']
+    },
     extend: {
       colors: {
         'blue-zeller': '#16183a'

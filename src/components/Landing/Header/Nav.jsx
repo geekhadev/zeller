@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import NavLink from '@/components/Header/NavLink'
+import NavLink from '@/components/Landing/Header/NavLink'
 
 const LINKS = [
   { href: '#inicio', label: 'Inicio' },
@@ -17,7 +17,7 @@ const Nav = () => {
         </NavLink>
       ))}
       <Link
-        href="/acceso"
+        href="#"
         className="
           rounded-full
           text-yellow-400

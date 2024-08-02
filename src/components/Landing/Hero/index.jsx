@@ -6,7 +6,7 @@ const Hero = () => {
       </div>
       <div className="max-w-screen-xl mx-auto flex justify-between items-center min-h-96 gap-36">
         <div className='flex justify-end items-center'>
-          <img src='banner.png' alt='Banner' className='h-[500px]' />
+          <img src='/banner.png' alt='Banner' className='h-[500px]' />
         </div>
         <div className='flex-1 flex flex-col gap-4'>
           <h1 className='text-7xl font-bold text-blue-zeller'>

@@ -1,8 +1,8 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import Information from '@/components/Information'
-import Features from '@/components/Features'
-import Footer from '@/components/Footer'
+import Header from '@/components/Landing/Header'
+import Hero from '@/components/Landing/Hero'
+import Information from '@/components/Landing/Information'
+import Features from '@/components/Landing/Features'
+import Footer from '@/components/Landing/Footer'
 
 export default function Home () {
   return (

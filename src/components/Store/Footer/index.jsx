@@ -1,15 +1,17 @@
 const Footer = () => {
   return (
-    <section className='bg-blue-zeller -mb-2'>
+    <section className='bg-gray-950 -mb-2'>
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8">
 
-            <div className='flex flex-col col-span-2 -mt-6'>
+            <div className='flex flex-col col-span-2'>
               <div className="max-w-96">
-                <img src='relif_logo_white.webp' alt='Chat Bubble' className='h-24' />
+                <h4 className='text-4xl text-white font-bold'>
+                  Bruno Fritsch
+                </h4>
               </div>
-              <p className='max-w-96 text-gray-400 text-lg ml-4'>
-                Este es un producto de <a href='#' target='_blank' rel='noreferrer' className='text-yellow-400 underline'>Relif</a> hecho con ❤️ en Chile, para la industria automotriz.
+              <p className='max-w-96 text-gray-400 text-lg mt-2'>
+                Mas de 30 años de experiencia en el rubro automotriz, concesionario oficial de la marca Volkswagen en Chile.
               </p>
             </div>
 
@@ -18,13 +20,10 @@ const Footer = () => {
                 Enlaces de interés
               </h4>
               <nav className='text-white text-xl gap-1 flex flex-col'>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
-                  Sitio web de Relif
-                </a>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   Blog y noticias
                 </a>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   Términos y condiciones
                 </a>
               </nav>
@@ -35,16 +34,16 @@ const Footer = () => {
                 Redes sociales
               </h4>
               <nav className='text-white text-xl gap-1 flex flex-col'>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   LinkedIn
                 </a>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   Twitter (X)
                 </a>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   Facebook
                 </a>
-                <a href='#' target='_blank' rel='noreferrer' className='hover:text-yellow-400'>
+                <a href='#' target='_blank' rel='noreferrer' className='hover:text-blue-400'>
                   Instagram
                 </a>
               </nav>
