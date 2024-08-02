@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS cars (
+    id SERIAL PRIMARY KEY,
+    price VARCHAR(20),
+    name VARCHAR(100),
+    slug VARCHAR(100)
+);

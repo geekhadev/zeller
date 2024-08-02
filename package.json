@@ -17,6 +17,7 @@
     "@testing-library/user-event": "^14.5.2",
     "dotenv": "^16.4.5",
     "next": "14.2.5",
+    "openai": "^4.53.2",
     "pg": "^8.12.0",
     "react": "^18",
     "react-dom": "^18",
